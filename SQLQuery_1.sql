@@ -1,3 +1,6 @@
+--CLASE 1--
+
+
 SELECT COLUMN_NAME ,DATA_TYPE
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_NAME='001_sales';
@@ -16,8 +19,4 @@ GROUP BY [Id_Producto]
 ;
 
 --Ccovertir la fecha a formato texto
-SELECT
-    [Sales_Date],
-    CAST(CONVERT(DATE,Sales_Date,103)AS DATE) AS Fecha_Convertida
-    FROM[DATAEX].[001_sales]
-
+ 
